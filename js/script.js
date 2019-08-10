@@ -15,6 +15,36 @@ project 1 - A Random Quote Generator
   Use console.log() to log your array of quotes to the console.
 ***/
 
+var quotes = [
+{ quote: 'The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.',
+  source: '-Mark Caine',
+  citation: 'https://www.keepinspiring.me/famous-quotes/',
+},
+{
+  quote: 'Great minds discuss ideas; average minds discuss events; small minds discuss people.',
+  source: '-Eleanor Roosevelt',
+  citation: 'https://www.keepinspiring.me/famous-quotes/',
+},
+{
+  quote: 'We must all face the choice between what is right and what is easy.',
+  source: '– J.K. Rowling',
+  citation: ' Harry Potter and the Goblet of Fire',
+  year: '2002',
+},
+{
+  quote: 'There is some good in this world, and it’s worth fighting for.',
+  source: '– J.R.R. Tolkien',
+  citation: 'The Two Towers',
+  year: '2009',
+},
+{
+  quote: 'Many of life’s failures are people who did not realize how close they were to success when they gave up.',
+  source: '-Thomas A. Edison',
+  citation: 'https://www.keepinspiring.me/famous-quotes/',
+}
+
+];
+
 
 
 
