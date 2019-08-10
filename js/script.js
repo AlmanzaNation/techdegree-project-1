@@ -6,14 +6,8 @@ project 1 - A Random Quote Generator
 // Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
 
 
-/*** 
-  Create the array of quote objects and name it `quotes`.
-  Add at least five quote objects to the `quotes` array.
-  Give each quote object a `quote` and `source` property.
-  Add the `citation` property to at least one object in the array.
-  Add the `year` property to at least one object in the array.
-  Use console.log() to log your array of quotes to the console.
-***/
+ 
+// created the array of quotes that holds the quote, source, citation, and year. 
 
 var quotes = [
 { quote: 'The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.',
@@ -43,17 +37,23 @@ var quotes = [
   citation: 'https://www.keepinspiring.me/famous-quotes/',
 }
 
+
 ];
 
 
+//Function to get random object from quote array and store in variable randomQuote
+function getRandomQuote() {
+  var randomQuote = Math.floor(Math.random() * quote.length);
 
+  var splicedQuote = quotes.splice(randomQuote, 1)[0];
+    viewedQuotes.push(splicedQuote);
+      if (quote.length === 0){
+        quotes = viewedQuotes;
+        viewedQuotes = [];
 
-/***
-  Create the `getRandomQuote` function to:
-   - Create a variable to store a random number 
-   - Cse the random number to `return` a random quote object from the `quotes` array.
-***/
-
+      }
+      return splicedQuote;
+}
 
 
 
