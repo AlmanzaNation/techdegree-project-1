@@ -55,21 +55,32 @@ function getRandomQuote() {
       return splicedQuote;
 }
 
+// created the printQuote function to call getRandomQuote and assign to var
+function printQuote () {
+  //printQuote runs, then starts the getRandomQuote function
+  var quote = getRandomQuote();
+  message ='<p class="quote">' + quotes.quote + '</p>';
+  message += '<p class="source">' + quotes.source;
+    if (quote.citation) {
+      message += '<span class="citation">' + quotes.citation + '</span>';
+    }
+    else {
+      message += '';
+    }
+    if (quote.tags) {
+      message += '<h3>' + quotes.tags + '</h3>';
+    }
+    else {
+      message += '';
+    }
+    print(message);
+}
 
-
-/***
-  Create the `printQuote` function to: 
-   - Call the `getRandomQuote` function and assign it to a variable.
-   - Create a variable for the HTML string and set it equal to an empty string.
-   - Use the HTML template in the instructions or the markup in the index.html file, AND 
-     the random quote vairable to build your HTML string.
-   - Add the quote and source section to the HTML string.
-   - Use an if statement to check for the citation property before adding it to the HTML string.
-   - Use an if statement to check for the year property before adding it to the HTML string.
-   - Don't forget to close that final `p` tag.
-   - Set the `innerHTML` of the `quote-box` div to the HTML string. 
-***/
-
+// set innerHTML of the quote-box div to HTML string
+function print(quote) {
+  var outputDiv = document.getElementById('quote-box');
+  outputDiv.innerHTML = quote;
+}
 
 
 
@@ -82,5 +93,3 @@ function getRandomQuote() {
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
