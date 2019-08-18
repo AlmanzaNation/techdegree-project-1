@@ -15,4 +15,4 @@ Generator a random quote when "Show me another quote" is clicked on
 
 ```
 
-![Screen shot of randomQuote Generator]('https://www.pastepic.xyz/image/RpmMv')
+![Screen shot of randomQuote Generator](https://github.com/AlmanzaNation/techdegree-project-1/blob/master/images/image1.png)
