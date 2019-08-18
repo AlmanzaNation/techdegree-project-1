@@ -1,4 +1,4 @@
-#Project 1 - Random quote generator
+# Project 1 - Random quote generator
 
 # Techdegree Project 1
 Random Quote Generator
