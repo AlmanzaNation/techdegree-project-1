@@ -13,3 +13,4 @@ Generator a random quote when "Show me another quote" is clicked on
 
 ```
 
+![Screen shot of randomQuote Generator]('https://www.pastepic.xyz/image/RpmMv')
