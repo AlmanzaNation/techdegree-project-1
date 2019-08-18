@@ -5,8 +5,6 @@ project 1 - A Random Quote Generator
 
 // Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
 
-
- 
 // created the array of quotes that holds the quote, source, citation, and year. 
 
 var quotes = [
@@ -37,43 +35,41 @@ var quotes = [
   citation: 'https://www.keepinspiring.me/famous-quotes/',
 }
 
-
 ];
-
+// console.log('my-quotes:', quotes);
 
 //Function to get random object from quote array and store in variable randomQuote
-function getRandomQuote() {
-  var randomQuote = Math.floor(Math.random() * quote.length);
 
+function getRandomQuote() {
+var viewedQuotes = []
+  var randomQuote = Math.floor(Math.random() * quotes.length);
   var splicedQuote = quotes.splice(randomQuote, 1)[0];
     viewedQuotes.push(splicedQuote);
-      if (quote.length === 0){
+      if (quotes.length === 0){
         quotes = viewedQuotes;
         viewedQuotes = [];
-
       }
       return splicedQuote;
+
 }
+
+
 
 // created the printQuote function to call getRandomQuote and assign to var
 function printQuote () {
-  //printQuote runs, then starts the getRandomQuote function
-  var quote = getRandomQuote();
-  message ='<p class="quote">' + quotes.quote + '</p>';
-  message += '<p class="source">' + quotes.source;
-    if (quote.citation) {
-      message += '<span class="citation">' + quotes.citation + '</span>';
+//   //printQuote runs, then starts the getRandomQuote function
+   var quotes = getRandomQuote();
+    var message = '<p class="quote">' + quotes.quote + '</p>';
+    message = message + '<p class="source">' + quotes.source;
+    
+    if(quotes.citation){
+      message = message +  '<span class="citation">' + quotes.citation + '</span>';
     }
-    else {
-      message += '';
+    if(quotes.year){
+      message = message + '<span class ="year">' + quotes.year + '</span>';
     }
-    if (quote.tags) {
-      message += '<h3>' + quotes.tags + '</h3>';
-    }
-    else {
-      message += '';
-    }
-    print(message);
+    message = message + '</p>';
+    print(message)
 }
 
 // set innerHTML of the quote-box div to HTML string
