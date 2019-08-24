@@ -1,12 +1,4 @@
-/******************************************
-Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
-******************************************/
-
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
-
 // created the array of quotes that holds the quote, source, citation, and year. 
-
 var quotes = [
 { quote: 'The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.',
   source: '-Mark Caine',
@@ -36,10 +28,8 @@ var quotes = [
 }
 
 ];
-// console.log('my-quotes:', quotes);
 
 //Function to get random object from quote array and store in variable randomQuote
-
 function getRandomQuote() {
 var viewedQuotes = []
   var randomQuote = Math.floor(Math.random() * quotes.length);
